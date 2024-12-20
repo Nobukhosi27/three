@@ -1,0 +1,29 @@
+.form-input{
+    height: 35px;
+    margin-bottom: 20px;
+    border: 1px solid #318aff ;
+    padding-left: 15px;
+    color: blueviolet;
+}
+
+.products{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+}
+
+button{
+    
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 25px;
+    background: plum;
+    transition: 0.5s ease;
+}
+
+button:hover{
+    background:plum;
+}

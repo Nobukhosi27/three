@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+
+}
+
+  
+.container{
+    background-color: #dfe6e9;
+    padding: 3em;
+}
+
+.card{
+    background-color: white;
+    border-radius: 10px;
+padding: 1em;
+box-shadow: 0px 10px 5px #b2bec3;
+text-align: center;
+font-family: 'Poppins';
+max-width: 80%;
+
+}
+
+.title{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+img{
+    max-width: 30%;
+    border-radius: 5px;
+}
+
+.description{
+    text-align: left;
+    margin-left: 2em;
+    margin-bottom: 0.5em;
+    font-size: 14px;
+}
+
+.products-container{
+    display: grid;
+    
+}
+

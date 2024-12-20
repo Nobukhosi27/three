@@ -1,0 +1,66 @@
+<div *ngIf="loader" class="loader-container">
+
+
+  <div class="loader">
+  
+  <p>Loading users</p>
+  
+  </div>
+
+  </div>
+  
+    
+    <div *ngIf="!loader" class="user-list">
+    
+        <h1>User List</h1>
+    
+        <table>
+    <thead>
+    <tr>
+        <th>ID</th>
+    <th>Email</th>
+    <th>Username</th>
+    <th>FirstName</th>
+    <th>LastName</th>
+    <th>City</th>
+    <th>Street</th>
+    <th>Number</th>
+    <th>Zipcode</th>
+    <th>Phone</th>
+    </tr>
+    
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users"  >
+            <td>{{user.id}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.name.firstname}}</td>
+            <td>{{user.name.lastname}}</td>
+            <td>{{user.address.city}}</td>
+            <td>{{user.address.street}}</td>
+            <td>{{user.address.number}}</td>
+            <td>{{user.address.zipcode}}</td>
+            
+            <td>{{user.phone}}</td>
+        </tr>
+        
+    </tbody>
+    
+        </table>
+        
+        
+          
+        
+        
+            </div>
+    
+    
+    
+    
+    
+    
+    
+    
+   
+    

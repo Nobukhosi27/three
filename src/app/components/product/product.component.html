@@ -1,0 +1,46 @@
+<div class="container">
+
+    <h1>Products</h1>
+  
+    <div *ngFor="let product of products" >
+<div class="products-container">
+<div class="card"> 
+
+    <div class="title"> 
+        <h1>{{product.title}}</h1>
+        <h4 [routerLink]="['user:/id' , product.id]"> {{userNames[product.id]?.username}} </h4>
+<button [routerLink]="['/product-details', product.id]"> View Details </button>
+
+    </div>
+    
+
+    <div class="image"> 
+        <img src="{{product.image}}"/>
+
+    </div>
+    <div class="price ">
+<label>Price:</label><h1>{{product.price}}</h1>
+    </div>
+
+    <div class="category"> 
+        <p>{{product.category}}</p>
+
+    </div>
+    
+
+
+    <div class="description"> 
+        <p>{{product.description}}</p>
+
+    </div>
+    
+  
+
+</div>
+
+
+
+</div>
+</div>
+
+</div>
